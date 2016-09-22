@@ -5,13 +5,13 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    private  static String createline(int firstInt,int secondInt,String delimiter,ArrayList<String> list){
-        String finalline=list.get(firstInt-1);
+    private  static String createLine(int firstInt, int secondInt, String delimiter, ArrayList<String> list){
+        String finalLine=list.get(firstInt-1);
         for (int num=(firstInt);num <(firstInt+secondInt);num++){
-            finalline=finalline+delimiter+list.get(num);
+            finalLine=finalLine+delimiter+list.get(num);
 
         }
-        return finalline;
+        return finalLine;
     }
     private static int getInt(Scanner sc){
         int integer=0;
@@ -87,7 +87,7 @@ public class Main {
         String delimiter=sc.next();
 
         sc.close();
-        System.out.println(createline(firstInteger,secondInteger,delimiter,stringList));
+        System.out.println(createLine(firstInteger,secondInteger,delimiter,stringList));
 
     }
 }
