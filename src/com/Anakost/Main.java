@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     private  static String createLine(int firstInt, int secondInt, String delimiter, ArrayList<String> list){
         String finalLine=list.get(firstInt-1);
-        for (int num=(firstInt);num <(firstInt+secondInt);num++){
+        for (int num=firstInt;num <(firstInt+secondInt);num++){
             finalLine=finalLine+delimiter+list.get(num);
 
         }
